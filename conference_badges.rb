@@ -15,9 +15,12 @@ end
 end
 
 def assign_rooms(name)
-rooms_assignements = []
-name.each_with_index {|name, index| rooms_assignements  << "Hello, #{name}! You'll be assigned to room #{index+1}!"}
-return rooms_assignements
+#rooms_assignements = []
+#name.each_with_index {|name, index| rooms_assignements  << "Hello, #{name}! You'll be assigned to room #{index+1}!"}
+#return rooms_assignements
+name.each_with_index.map do |name|
+  "Hello, #{name}! You'll be assigned to room #{index+1}!"
+end
 end
 
 def printer(name)
