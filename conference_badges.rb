@@ -9,8 +9,9 @@ def batch_badge_creator(name)
 #attendees_array = []
 #name.each { |name| attendees_array << "Hello, my name is #{name}."}
 #return attendees_array
-name.map  do |name|
+name.map do |name|
   "Hello, my name is #{name}."
+end
 end
 
 def assign_rooms(name)
